@@ -356,7 +356,7 @@ class BankNotes extends PluginBase implements Listener{
 			
 			
 			case "note":
-			case "withdraw":
+			case "makenote":
 				
 				#check if player used arguments
 				if(empty($args[0])){
@@ -417,7 +417,7 @@ class BankNotes extends PluginBase implements Listener{
 			}
 			break;
 			
-			case "deposit":
+			case "depositnote":
 			$return = $this->depositCheck($sender);
 			switch($return){
 				case -1:
